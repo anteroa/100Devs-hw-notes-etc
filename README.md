@@ -1,3 +1,3 @@
 # learnwithleon_notes
 
-This repo will contasin notes taken every class
+This repo will contain notes taken every class
