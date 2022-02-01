@@ -1,0 +1,13 @@
+#tc_logo_small {
+  height: 40px;
+  width: 80px;
+}
+
+.bp_item_right > img {
+  /* height: 10%; */
+  width: 160px;
+}
+
+.tp_list_item > img {
+  width: 20px;
+}
