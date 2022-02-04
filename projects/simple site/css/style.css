@@ -1,0 +1,24 @@
+body{
+    border: 2px lightgreen solid;
+    background-color: rgb(42, 209, 231);
+}
+
+h1{
+    color: whitesmoke;
+    margin-top: 80px;
+    text-align: center;
+    font-style: italic;
+}
+
+nav * {
+    display: inline;
+    text-decoration: solid;    
+}
+
+nav a{
+    color: whitesmoke;
+}
+
+nav p {
+    color: gray;
+}
