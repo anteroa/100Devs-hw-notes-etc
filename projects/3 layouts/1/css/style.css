@@ -1,0 +1,19 @@
+#headr {
+  border: orange 2px solid;
+  height: 120px;
+}
+
+#triple_sec {
+  border: solid black 2px;
+  height: 190px;
+}
+
+#double_sec {
+  border: solid blue 2px;
+  height: 230px;
+}
+
+#footr {
+  border: solid green 2px ;
+  height: 130px;
+}
