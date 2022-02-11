@@ -1,0 +1,87 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    width: 1080px;
+
+}
+
+/* Navigation Bar */
+.nav_li {
+    display: inline;
+    background-color: black;
+}
+
+.nav_li>a {
+    color: whitesmoke;
+}
+
+/* main section with highlighted articles */
+/* rules affecting both sections*/
+.section_title {
+    width: 100%;
+    clear: both;
+}
+
+.greeting_text,
+.timestamp_text {
+    display: inline;
+}
+
+.greeting_text {
+    padding: 0% 30% 0% 2%;
+}
+
+.timestamp_text {
+    padding: 0% 0% 0% 30%;
+}
+
+.top_section,
+.bottom_section {
+    width: 100%;
+    height: 25%;
+}
+
+/* rules affecting TOP section ONLY */
+/* rules affecting LEFT section ONLY */
+.big_panel_img {
+    height: 90%;
+    width: 90%;
+}
+
+/* rules affecting RIGHT section ONLY */
+.left_div,
+.right_div {
+    height: 25%;
+    width: 50%;
+    display: inline-flex;
+    float: left;
+}
+
+.right_div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quad_panel_div {
+    float: left;
+    width: 25%;
+}
+
+.quad_panel_img {
+    height: 100%;
+    width: 100%;
+
+}
+
+
+/* bottom section */
+.bottom_left,
+.bottom_mid,
+.bottom_right {
+    float: left;
+    display: inline;
+    width: 33%;
+}
