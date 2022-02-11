@@ -1,0 +1,43 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#headr,
+#footr {
+    border: orange 2px solid;
+    height: 120px;
+    clear: both;
+}
+
+#main_sec {
+    border: solid green;
+    height: 400px;
+    clear: both;
+}
+
+.main_sec_div {
+    border: solid purple 2px;
+    display: inline;
+    width: inherit;
+    float: left;
+    height: 99.999%;
+}
+
+#left,
+#right {
+    width: 20%;
+}
+
+#center_big {
+    width: 40%;
+}
+
+#center_small {
+    width: 20%;
+}

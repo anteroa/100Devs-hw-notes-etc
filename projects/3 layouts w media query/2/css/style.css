@@ -1,0 +1,43 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+#headr,
+#footr {
+    border: orange 2px solid;
+    height: 120px;
+    clear: both;
+}
+
+#single_sec {
+    border: solid green;
+    height: 190px;
+    clear: both;
+}
+
+.single_sec_div {
+    border: solid purple 2px;
+    width: 99.999%;
+    display: inline;
+    float: left;
+    height: 185px;
+}
+
+#double_sec {
+    border: solid blue 2px;
+    height: 230px;
+    clear: both;
+}
+
+.double_sec_div {
+    border: solid red 2px;
+    width: 30%;
+    display: inline-block;
+    float: left;
+    height: 225px;
+}
+
+.double_sec_div~div {
+    width: 69.999%;
+}
