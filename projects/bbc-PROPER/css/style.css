@@ -1,28 +1,66 @@
-/* Box Model Hack */
 * {
-    box-sizing: border-box;
+    margin: 0%;
+}
+
+.headr {
+    height: 10%;
 }
 
 .body {
-    width: 1080px;
-
+    display: block;
+    max-width: 1000px;
+    min-width: 480px;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    justify-content: center;
 }
 
-/* Navigation Bar */
-.nav_li {
+.main {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+    NAV
+    Navigation Bar
+*/
+
+.nav_container {
+    height: ;
+}
+
+.navbar>ul>.nav_li {
     display: inline;
+    padding: 0% 2% 0% 2%;
     background-color: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+.nav_li .bbc_icon {
+    width: 3%;
+    height: auto;
 }
 
 .nav_li>a {
     color: whitesmoke;
 }
 
-/* main section with highlighted articles */
-/* rules affecting both sections*/
+/*
+    section INTRO
+    class needs to be renamed
+*/
+
 .section_title {
     width: 100%;
     clear: both;
+    margin-bottom: 0%;
+    margin-top: 0%;
 }
 
 .greeting_text,
@@ -38,50 +76,94 @@
     padding: 0% 0% 0% 30%;
 }
 
-.top_section,
-.bottom_section {
-    width: 100%;
-    height: 25%;
+/* 
+    MAIN section with highlighted articles 
+    this section also contains rules for the
+    image grid panel on the top-right of the 
+    page.
+*/
+/* whole top section */
+.top_section {
+    border: solid 1.5% green;
+    float: left;
+    height: 50%;
 }
 
-/* rules affecting TOP section ONLY */
-/* rules affecting LEFT section ONLY */
-.big_panel_img {
-    height: 90%;
-    width: 90%;
-}
+/* left (MAIN) side */
 
-/* rules affecting RIGHT section ONLY */
-.left_div,
-.right_div {
-    height: 25%;
+.left_div {
+    height: 100%;
     width: 50%;
-    display: inline-flex;
     float: left;
+    justify-content: stretch;
 }
 
+.big_div {
+    width: 100%;
+}
+
+.big_panel_img {
+    width: 100%;
+}
+
+/* right (QUAD pane) side */
 .right_div {
-    display: flex;
-    flex-wrap: wrap;
+    height: 100%;
+    width: 50%;
+    float: right;
+    display: inline;
 }
 
-.quad_panel_div {
+div .qp_div {
+    height: 12.5%;
+    margin: 0.5%;
+}
+
+.quad_panel_div1,
+.quad_panel_div3 {
     float: left;
-    width: 25%;
+    width: 49%;
+    height: 25%;
+    clear: right;
+    border: solid 1.5% black;
+    position: relative;
+}
+
+.quad_panel_div2,
+.quad_panel_div4 {
+    float: right;
+    width: 49%;
+    border: solid 1.5% black;
+    position: relative;
 }
 
 .quad_panel_img {
-    height: 100%;
     width: 100%;
+}
 
+.quad_panel_img>.news_tag {
+    position: absolute;
+    bottom: 4%;
+    left: 4%;
 }
 
 
 /* bottom section */
-.bottom_left,
-.bottom_mid,
-.bottom_right {
+.bottom_section {
+    display: block;
+    height: 50%;
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
+.bottom_sec_div {
     float: left;
     display: inline;
     width: 33%;
+}
+
+
+.bottom_sec_img {
+    width: 96%;
 }
