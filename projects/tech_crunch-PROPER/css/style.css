@@ -1,0 +1,47 @@
+.main {
+  max-width: 1366px;
+  min-width: 768px;
+  width: 100%;
+  max-height: none;
+  min-height: 432px;
+  height: 768.38px;
+  float: left;
+}
+
+li {
+  list-style-type: none;
+}
+
+.sidebar_div {
+  height: 100%;
+  width: 20.5%;
+  float: left;
+}
+
+.sidebar {
+  height: 100%;
+  width: auto;
+}
+
+.sidebar img {
+  height: 25px;
+  width: auto;
+}
+
+.top_section {
+  height: 70%;
+  width: 79%;
+  display: block;
+  float: right;
+}
+
+
+.latest_news {
+  height: 30%;
+  width: 79%;
+  float: right;
+}
+
+* {
+  border: solid blue 1px;
+}

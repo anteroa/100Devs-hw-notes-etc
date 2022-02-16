@@ -1,11 +1,3 @@
-* {
-    margin: 0%;
-}
-
-.headr {
-    height: 10%;
-}
-
 .body {
     display: block;
     max-width: 1000px;
@@ -15,7 +7,6 @@
     background-color: whitesmoke;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    justify-content: center;
 }
 
 .main {
@@ -25,13 +16,18 @@
     height: 100%;
 }
 
+
 /* 
     NAV
     Navigation Bar
 */
+.headr {
+    float: left;
+    height: 10%;
+}
 
 .nav_container {
-    height: ;
+    height: 100%;
 }
 
 .navbar>ul>.nav_li {
