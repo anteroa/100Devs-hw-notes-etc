@@ -1,0 +1,84 @@
+.main {
+    max-width: 1366px;
+    min-width: 768px;
+    width: 100%;
+    max-height: none;
+    min-height: 432px;
+    height: 768.38px;
+    float: left;
+}
+
+/**
+ * Navbar 
+ */
+
+.headr {
+    height: 8%;
+}
+
+.navbar {
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-bottom: 2px lightgray solid;
+}
+
+.list_item {
+    display: inline;
+    float: left;
+    list-style-type: none;
+}
+
+.nav_link {
+    text-decoration: none;
+}
+
+.courses {
+    width: 10%;
+    height: 100%;
+}
+
+.search {
+    width: 19%;
+    height: 100%
+}
+
+.logo {
+    width: 39%;
+    height: 100%;
+    text-align: center;
+}
+
+.logo_div {
+    height: 100%;
+    width: auto;
+    padding-bottom: 2%;
+}
+
+.logo_div>img {
+    display: inline;
+    height: 40px;
+}
+
+.logo_div>p {
+    display: inline-block;
+}
+
+.donate {
+    width: 10%;
+    height: 100%
+}
+
+.login {
+    width: 10%;
+    height: 100%
+}
+
+.sign_up {
+    width: 10%;
+    height: 100%
+}
+
+.top_section {
+    height: 90%;
+}

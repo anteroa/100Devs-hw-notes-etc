@@ -8,6 +8,10 @@
   float: left;
 }
 
+/**
+ * sidebar
+ */
+
 li {
   list-style-type: none;
 }
@@ -28,6 +32,24 @@ li {
   width: auto;
 }
 
+.list_item {
+  margin: 10px 10px;
+}
+
+.nav_anchor {
+  text-decoration: none;
+  color: gray;
+}
+
+.extra_crunch {
+  color: orange;
+}
+
+/**
+ * "top section", contains highlited article section
+ *  and the latest news list
+ */
+
 .top_section {
   height: 70%;
   width: 79%;
@@ -35,13 +57,116 @@ li {
   float: right;
 }
 
+/**  highlited article section css only */
+.highlighted_article {
+  height: 100%;
+  width: 60%;
+  float: left;
+}
 
+.article_type {
+  height: 5%;
+  margin: 0 0;
+}
+
+.article_title {
+  height: 20%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.article_desc {
+  height: 10%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.article_author {
+  height: 5%;
+}
+
+.article_img {
+  height: 60%;
+  width: 100%;
+}
+
+
+/**  highlited article section css only */
+.news_feed {
+  height: 100%;
+  width: 40%;
+  float: right;
+}
+
+.feed_article {
+  height: auto;
+  width: 90%;
+  margin: 4% 10%;
+  border-bottom: 1px solid gray;
+  padding-bottom: 2%;
+}
+
+.article_title.feed {
+  height: 80%;
+  margin-bottom: 2%;
+}
+
+.article_author.feed {
+  height: 20%;
+}
+
+/**  latest news section css only */
 .latest_news {
   height: 30%;
   width: 79%;
   float: right;
 }
 
-* {
-  border: solid blue 1px;
+.row {
+  height: 80%;
+  width: 100%;
+  border-top: 1px solid gray;
+}
+
+.row_header {
+  padding: 2% 0%;
+}
+
+.row>div {
+  display: inline;
+  width: 33%;
+  float: left;
+}
+
+.latest_column.left {
+  height: 100%;
+  width: 33.33%;
+  display: inline;
+  float: left;
+}
+
+.latest_column.center {
+  height: 100%;
+}
+
+.latest_column.right {
+  float: inline-end;
+}
+
+.article_title.column {
+  padding: 0% 8% 0% 0%;
+}
+
+.article_author.column {
+  padding: 0% 5% 0% 0%;
+}
+
+.row_p {
+  color: gray;
+  padding: 0% 10% 7% 0%;
+}
+
+.column_img {
+  width: 100%;
+  padding: 5% 0% 2% 0%;
 }
