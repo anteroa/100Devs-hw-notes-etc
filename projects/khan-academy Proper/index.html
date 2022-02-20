@@ -6,36 +6,74 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Libre+Baskerville&family=Noto+Sans&family=Noto+Serif&display=swap"
+    rel="stylesheet">
+
   <title>Khan Academy</title>
 </head>
 
 <body>
   <div class="main">
-
     <div class="headr">
       <nav class="navbar">
-        <ul>
+        <ul class="u_list">
           <li class="list_item courses"><a class="nav_link" href="#">Courses</a></li>
-          <li class="list_item search"><a class="nav_link" href="#">Search</a></li>
+
+          <li class="list_item search">
+            <div class="search_div">
+              <input class="search_input" type="search" placeholder="Search">
+              <button class="search_button" type="submit">
+                <img class="search_icon" src="./assets/img/search-icon.png">
+              </button>
+            </div>
+          </li>
+
           <li class="list_item logo">
             <a class="nav_link" href="#">
               <div class="logo_div">
-                <img class="logo_img" src="./assets/img/logo.png">
-                <p class="logo_text">Khan Academy</p>
+                <img class="logo_img" src="./assets/img/1024px-Khan_Academy_logo_(2018).svg.png">
               </div>
             </a>
           </li>
+
           <li class="list_item donate"><a class="nav_link" href="#">Donate</a></li>
+
           <li class="list_item login"><a class="nav_link" href="#">Log In</a></li>
+
           <li class="list_item sign_up"><a class="nav_link" href="#">Sign Up</a></li>
         </ul>
       </nav>
     </div>
 
     <div class="top_section">
-      <section>
-        <div class="left_side"></div>
-        <div class="right_side"></div>
+      <section class="section">
+        <div class="left_side">
+          <div class="big_img_div">
+            <img class="big_img" src="./assets/img/biogimg.png">
+          </div>
+        </div>
+
+        <div class="right_side">
+          <div class="right_side_title">
+            <h2 class="title_text">For every student,<br>every classroom.<br>Real results.</h2>
+          </div>
+          <div class="right_side_line">
+            <img class="line_img" src="./assets/img/line.png" alt="">
+          </div>
+          <div class="right_side_span">
+            <span class="span_content">We’re a nonprofit with the mission to provide a free, world-class education for
+              anyone, anywhere.</span>
+          </div>
+          <div class="right_side_buttons">
+            <button class="learners">Learners</button>
+            <button class="teachers">Teachers</button>
+            <button class="districts">Districts</button>
+            <button class="parents">Parents</button>
+          </div>
+        </div>
       </section>
     </div>
 

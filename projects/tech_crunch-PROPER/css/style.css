@@ -20,6 +20,8 @@ li {
   height: 100%;
   width: 20.5%;
   float: left;
+  margin-left: -3%;
+  padding-right: 0;
 }
 
 .sidebar {
@@ -34,6 +36,7 @@ li {
 
 .list_item {
   margin: 10px 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav_anchor {
@@ -45,13 +48,18 @@ li {
   color: orange;
 }
 
+.content>.extra_crunch {
+  padding: 2% 0 1% 0;
+  font-family: 'Roboto', sans-serif;
+}
+
 /**
  * "top section", contains highlited article section
  *  and the latest news list
  */
 
 .top_section {
-  height: 70%;
+  height: auto;
   width: 79%;
   display: block;
   float: right;
@@ -59,7 +67,7 @@ li {
 
 /**  highlited article section css only */
 .highlighted_article {
-  height: 100%;
+  height: auto;
   width: 60%;
   float: left;
 }
@@ -70,31 +78,53 @@ li {
 }
 
 .article_title {
-  height: 20%;
+  height: auto;
   margin-top: 0%;
   margin-bottom: 0%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.article_title.big_title {
+  width: 105%;
+  font-size: 1.60rem;
+  padding-bottom: 1%;
 }
 
 .article_desc {
   height: 10%;
   margin-top: 0.5%;
   margin-bottom: 0.5%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.80rem;
+  color: gray;
 }
 
 .article_author {
   height: 5%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.article_author.big {
+  display: inline-block;
+  padding-bottom: 1%;
 }
 
 .article_img {
-  height: 60%;
+  height: 100%;
   width: 100%;
 }
 
 
 /**  highlited article section css only */
 .news_feed {
-  height: 100%;
   width: 40%;
+  float: right;
+}
+
+.news_feed.container {
+  height: 70%;
   float: right;
 }
 
@@ -102,17 +132,22 @@ li {
   height: auto;
   width: 90%;
   margin: 4% 10%;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid lightgray;
   padding-bottom: 2%;
 }
 
+div.last_feed_article {
+  border-bottom: none;
+}
+
 .article_title.feed {
-  height: 80%;
+  height: 85%;
   margin-bottom: 2%;
+  font-size: 1.2rem;
 }
 
 .article_author.feed {
-  height: 20%;
+  height: 15%;
 }
 
 /**  latest news section css only */
@@ -120,6 +155,7 @@ li {
   height: 30%;
   width: 79%;
   float: right;
+
 }
 
 .row {
@@ -129,36 +165,37 @@ li {
 }
 
 .row_header {
-  padding: 2% 0%;
+  padding: 4% 0 2% 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
 }
 
 .row>div {
   display: inline;
   width: 33%;
   float: left;
-}
-
-.latest_column.left {
   height: 100%;
-  width: 33.33%;
-  display: inline;
-  float: left;
-}
-
-.latest_column.center {
-  height: 100%;
-}
-
-.latest_column.right {
-  float: inline-end;
 }
 
 .article_title.column {
-  padding: 0% 8% 0% 0%;
+  width: 75%;
+  height: 70%;
+  font-size: .82rem;
 }
 
 .article_author.column {
-  padding: 0% 5% 0% 0%;
+  height: 10%;
+}
+
+.article_timestamp.column {
+  height: 20%;
+  margin-top: -5%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.8rem;
+}
+
+.article_desc.column {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .row_p {
@@ -167,6 +204,8 @@ li {
 }
 
 .column_img {
+  height: 100%;
   width: 100%;
   padding: 5% 0% 2% 0%;
+  object-fit: cover;
 }

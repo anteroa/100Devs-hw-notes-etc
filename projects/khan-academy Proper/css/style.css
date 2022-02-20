@@ -11,41 +11,98 @@
 /**
  * Navbar 
  */
-
+/* coontainers, structural*/
 .headr {
-    height: 8%;
+    height: 5%;
 }
 
 .navbar {
     height: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    border-bottom: 2px lightgray solid;
+    padding: 1% 0 0 0;
+    border-bottom: 1px lightgray solid;
+    padding-bottom: 2%;
+    margin-top: -2%;
+}
+
+.u_list {
+    width: 100%;
+    height: 80%;
 }
 
 .list_item {
+    height: 99%;
     display: inline;
     float: left;
     list-style-type: none;
+    font-family: 'Libre Baskerville', serif;
+    color: #444;
+    text-size-adjust: 3rem;
 }
 
 .nav_link {
     text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
 
+/* Courses link*/
 .courses {
     width: 10%;
     height: 100%;
 }
 
+/* Search innput and button*/
 .search {
     width: 19%;
-    height: 100%
+    height: 100%;
 }
 
+.search_div {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(240, 241, 242);
+    float: left;
+    border-radius: 5px;
+    padding: 2% 0 0 2%;
+}
+
+.search_input {
+    width: 80%;
+    height: auto;
+    font-family: 'Lato', sans-serif;
+    opacity: 1;
+    color: #1054a7;
+    background: transparent;
+    border: none;
+    float: left;
+}
+
+.search_button {
+    background: transparent;
+    border: none;
+    width: 15%;
+    height: auto;
+    display: inline;
+    float: left;
+}
+
+.search_icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+::placeholder {
+    color: #1054a7;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* Khan Academy logo (big one in the  center)*/
 .logo {
     width: 39%;
-    height: 100%;
+    height: 10%;
     text-align: center;
 }
 
@@ -57,28 +114,130 @@
 
 .logo_div>img {
     display: inline;
-    height: 40px;
+    height: 30px;
 }
 
-.logo_div>p {
-    display: inline-block;
-}
-
+/* Donate link*/
 .donate {
     width: 10%;
-    height: 100%
+    height: 100%;
 }
 
+/* Login link*/
 .login {
     width: 10%;
-    height: 100%
+    height: 100%;
 }
 
+/* Sign Up link*/
 .sign_up {
     width: 10%;
-    height: 100%
+    height: 100%;
 }
 
+.courses,
+.donate,
+.login,
+.sign_up {
+    padding-top: 0.5%;
+}
+
+/* Top Section 
+*  the two divs which contain the image, title, decription and buttons 
+*  its split into two divs, left_div, and right_div
+*/
 .top_section {
     height: 90%;
+    width: 100%;
+    float: left;
+}
+
+.section {
+    height: 100%;
+    width: 100%;
+}
+
+/* Left side contains the image and thats pretty much it*/
+.left_side {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.big_img_div {
+    height: 100%;
+    width: auto;
+}
+
+.big_img {
+    height: 70%;
+    float: right;
+    padding-top: 5%;
+}
+
+/* Right side contains the title, span and buttons*/
+.right_side {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.right_side_title {
+    font-size: 1.5rem;
+    float: left;
+    height: 30%;
+    padding: 4% 0 0 0;
+    margin: 16% 0 0 0;
+    font-family: 'Noto Serif', serif;
+}
+
+div>.title_text {
+    font-family: inherit;
+    font-size: 2.8rem;
+}
+
+.right_side_line {
+    height: 5%;
+}
+
+.line_img {
+    height: 100%;
+    padding-top: 1%;
+}
+
+.right_side_span {
+    height: 10%;
+    width: 85%;
+    float: left;
+    padding: 7% 0 0 0;
+    margin: 0 0 0 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.9rem;
+    line-height: 175%;
+}
+
+.span_content {
+    padding-top: 5%;
+}
+
+.right_side_buttons {
+    width: 60%;
+    height: 20%;
+    float: left;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-family: 'Noto Sans', sans-serif;
+    clear: both;
+}
+
+.right_side_buttons>button {
+    width: 20%;
+    border: none;
+    background-color: #006aec;
+    border-radius: 5px;
+    padding: 2.5% 1%;
+    display: inline;
+    color: whitesmoke;
+    font-size: 0.70rem;
+
 }
