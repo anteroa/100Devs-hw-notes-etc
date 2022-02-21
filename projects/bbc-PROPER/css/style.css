@@ -6,4 +6,127 @@
     min-height: 432px;
     height: 768.38px;
     float: left;
+    position: absolute;
+}
+
+/*Navbar*/
+.headr_container {
+    height: 5%;
+    width: 100%;
+    float: left;
+}
+
+.list_item {
+    display: inline;
+}
+
+/*section title top*/
+.section_title.top {
+    height: 10%;
+    width: 100%;
+    float: left;
+}
+
+.title {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.timestamp {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+/*
+* top section
+*/
+.top_section {
+    height: 45%;
+    width: 100%;
+    float: left;
+}
+
+/*left side of top_section, contains the big article*/
+.left_side {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.article_img {
+    height: 100%;
+    width: auto;
+    z-index: 1;
+}
+
+.article_img>.big_img {
+    height: 100%;
+}
+
+.article_title.left,
+.article_desc.left,
+.article_tag.left {
+    z-index: 2;
+    margin-top: -15%;
+}
+
+/*right side, contains the quad image panel to the right of 
+ * the big article* */
+.right_side {
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+
+.panel_article.bottom_left,
+.panel_article.top_left {
+    float: left;
+    height: 49%;
+    width: 22%;
+    padding: 0%;
+    clear: right;
+    margin-left: 0%;
+}
+
+.panel_article.bottom_right,
+.panel_article.top_right {
+    float: right;
+    height: 49%;
+    width: 22%;
+    padding: 0%;
+    margin-right: 35%;
+}
+
+.quad_panel_img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.panel_article>.article_title {
+    height: 10%;
+    color: green;
+    width: 50%;
+    float: left;
+}
+
+.panel_article>.article_tag {
+    color: orange;
+    float: left;
+}
+
+/*section title bottom*/
+.section_title.bottom {
+    height: 10%;
+    width: auto;
+    float: left;
+}
+
+/*bottom section*/
+.bottom_section {
+    height: 30%;
+    width: 100%;
+    float: left;
 }
