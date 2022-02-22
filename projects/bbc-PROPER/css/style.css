@@ -1,12 +1,7 @@
 .main {
-    max-width: 1366px;
-    min-width: 768px;
     width: 100%;
-    max-height: none;
-    min-height: 432px;
-    height: 768.38px;
+    height: auto;
     float: left;
-    position: absolute;
 }
 
 /*Navbar*/
@@ -21,7 +16,7 @@
 }
 
 /*section title top*/
-.section_title.top {
+.section_title {
     height: 10%;
     width: 100%;
     float: left;
@@ -50,26 +45,25 @@
 
 /*left side of top_section, contains the big article*/
 .left_side {
+    position: relative;
     height: 100%;
     width: 50%;
     float: left;
 }
 
-.article_img {
+.big_img {
     height: 100%;
-    width: auto;
+    width: 100%;
+    position: absolute;
     z-index: 1;
-}
-
-.article_img>.big_img {
-    height: 100%;
 }
 
 .article_title.left,
 .article_desc.left,
 .article_tag.left {
-    z-index: 2;
-    margin-top: -15%;
+    margin-top: 0;
+    position: absolute;
+    z-index: 4;
 }
 
 /*right side, contains the quad image panel to the right of 
@@ -78,43 +72,70 @@
     float: right;
     height: 100%;
     width: 50%;
+    margin: 0 5% 0 0;
 }
 
-.panel_article.bottom_left,
+.panel_article {
+    position: relative;
+    height: 50%;
+    width: 25%;
+}
+
 .panel_article.top_left {
     float: left;
-    height: 49%;
+    height: 48%;
+    width: 50%;
+    padding: 0%;
+    margin: 0 0 0 2.5%;
+}
+
+.panel_article.top_right {
+    float: right;
+    height: 48%;
+    width: 25%;
+    padding: 0%;
+}
+
+
+.panel_article.bottom_left {
+    float: left;
+    height: 48%;
     width: 22%;
     padding: 0%;
     clear: right;
-    margin-left: 0%;
 }
 
-.panel_article.bottom_right,
-.panel_article.top_right {
+.panel_article.bottom_right {
     float: right;
-    height: 49%;
+    height: 48%;
     width: 22%;
     padding: 0%;
-    margin-right: 35%;
+    clear: left;
 }
 
 .quad_panel_img {
-    height: 100%;
-    width: auto;
-    object-fit: cover;
+    height: 99%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
 }
 
-.panel_article>.article_title {
+.article_title.right {
     height: 10%;
     color: green;
-    width: 50%;
+    width: 40%;
     float: left;
+    margin-top: -35%;
+    z-index: 4;
+    position: absolute;
 }
 
-.panel_article>.article_tag {
+.article_tag.right {
+    height: 10%;
     color: orange;
-    float: left;
+    z-index: 4;
+    position: absolute;
+    margin: 90% 0 0 5%;
 }
 
 /*section title bottom*/
