@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/wtp2rey.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>KOMA</title>
 </head>
@@ -13,74 +17,151 @@
     <div class="main">
         <!-- Nav -->
         <div class="navbar">
-            <ul>
-                <li class="list_item">
-                    <img class="nav_logo" src="./assets/img/KOMA.png" alt="koma logo"></li>
-                <li class="list_item">
-                    <a class="nav_home" href="#">home</a>
+            <ul class="nav_ul">
+                <li class="list_item nav_logo">
+                    <img class="nav_logo_img" src="./assets/img/KOMA.png" alt="koma logo"></li>
+                <li class="list_item nav_home">
+                    <a href="#">HOME</a>
                 </li>
-                <li class="list_item">
-                    <a class="nav_about" href="#">about</a>
+                <li class="list_item nav_about">
+                    <a href="#">ABOUT</a>
                 </li>
-                <li class="list_item">
-                    <a class="nav_services" href="#">services</a>
+                <li class="list_item nav_services">
+                    <a href="#">SERVICES</a>
                 </li>
-                <li class="list_item">
-                    <a class="nav_lookbook" href="#">lookbook</a>
+                <li class="list_item nav_lookbook">
+                    <a href="#">LOOKBOOK</a>
                 </li>
-                <li class="list_item">
-                    <a class="nav_contact" href="#">contact</a>
+                <li class="list_item nav_contact">
+                    <a href="#">CONTACT</a>
                 </li>
-                <li class="list_item">
-                    <a class="nav_search" href="#">
-                        <img src="./assets/img/search.png" alt="search icon">
+                <li class="list_item nav_search">
+                    <a href="#">
+                        <img class="nav_icon" src="./assets/img/search.png" alt="search icon">
                     </a>
                 </li>
-                <li class="list_item">
-                    <a class="nav_cart" href="#">
-                        <img src="./assets/img/bag.png" alt="bag icon">
+                <li class="list_item nav_cart">
+                    <a href="#">
+                        <img class="nav_icon" src="./assets/img/bag.png" alt="bag icon">
                     </a>
                 </li>
-                <li class="list_item">
-                    <a class="nav_booking" href="#">- book online</a>
+                <li class="list_item nav_booking">
+                    <a href="#">- BOOK ONLINE</a>
                 </li>
             </ul>
         </div>
-        <!-- First section-->
+        <!-- First section, big picture and services-->
         <div class="first_section">
-            <div class="fs_top">a</div>
-            <div class="fs_bottom">a</div>
+            <div class="big_title fs">
+                <p>BEAUTY & <br>HAIR SALON</p>
+            </div>
+            <div class="small_title fs">
+                <p>CHANGE YOUR LOOK WITH OUR TALENTED STYLISTS</p>
+            </div>
+            <div class="services_button fs">
+                <button><img class="kebab_icon" src="./assets/img/kebab_horizon.png" alt="">
+                    <p>OUR SERVICES</p>
+                </button>
+            </div>
+            <div class="button_container">
+                <button class="left_button">
+                    <img class="arrow_icon" src="./assets/img/left_arrow.png" alt="">
+                </button>
+            </div>
+            <div class="button_container">
+                <button class="right_button">
+                    <img class="arrow_icon" src="./assets/img/right_arrow.png" alt="">
+                </button>
+            </div>
         </div>
-        <!-- Second section-->
+        <!-- Second section, welcome and vid section-->
         <div class="second_section">
-            <div class="ss_left">a</div>
-            <div class="ss_right">a</div>
+            <div class="ss_top_left">
+                <p>WELCOME TO<br> KOMA HAIR SALON</p>
+                <img class="line_sm" src="./assets/img/black_line.png" alt="">
+            </div>
+            <div class="ss_top_right">
+                <p>Hair Salon volutpat ut nisl in hendrerit. Vestibulum ante ipsum isul primis in faucibus orci luctus
+                    et ultrices posuere cubilia Curaemil Etiam porttitor, lacus in luctus molestie, lacus in luctus
+                    molestie, libero justo ullamcorper nulla, sed lacinia erat metus eget diamlibero justo ullamcorper
+                    nulla, sed lacinia erat metus atm diam. Morbi vestibioas beauty products.</p>
+                <button><img class="kebab_icon" src="./assets/img/kebab_horizon.png" alt="">
+                    <p>READ MORE</p>
+                </button>
+            </div>
+            <div class="ss_bottom">
+                <iframe width="80%" height="100%" src="https://www.youtube.com/embed/ZPCaVyw-o-k"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
-        <!-- Third section-->
+        <!-- Third section, "OUR SERVICES" section-->
         <div class="third_section">
-            <div class="ts_stylist">
-                <img src="" alt="">
-                <button></button>
+            <div class="section_title ts">
+                <p>OUR SERVICES</p>
+                <img class="line_sm" src="./assets/img/black_line.png" alt="">
             </div>
-            <div class="ts_stylist">
-                <img src="" alt="">
-                <button></button>
+            <div class="sevices_panel"></div>
+            <div class="ts_service one">
+                <p class="service_title">HAIR STYLING SERVICES</p>
+                <button><img class="kebab_icon" src="./assets/img/kebab_horizon.png" alt="">
+                    <p>READ MORE</p>
+                </button>
             </div>
-            <div class="ts_stylist">
-                <img src="" alt="">
-                <button></button>
+            <div class="ts_service two">
+                <p class="service_title">MAKE-UP SERVICES</p>
+                <button><img class="kebab_icon" src="./assets/img/kebab_horizon.png" alt="">
+                    <p>READ MORE</p>
+                </button>
+            </div>
+            <div class="ts_service three">
+                <p class="service_title">COSMETIC SERVICES</p>
+                <button><img class="kebab_icon" src="./assets/img/kebab_horizon.png" alt="">
+                    <p>READ MORE</p>
+                </button>
+            </div>
+            <div class="ts_service four">
+                <p class="service_title">NAIL POLISH SERVICES</p>
+                <button><img class="kebab_icon" src="./assets/img/kebab_horizon.png" alt="">
+                    <p>READ MORE</p>
+                </button>
             </div>
         </div>
-        <!-- Fourth section-->
+        <!-- Fourth section, "OUR STYLERS" section-->
         <div class="fourth_section">
-            <span></span>
-            <p></p>
-            <button></button>
+            <p class="section_title fs">YOUR STYLERS</p>
+            <img class="line_sm" src="./assets/img/black_line.png" alt="">
+            <div class="stylist_panel">
+                <div class="stylist">
+                    <img class="stylist_pic" src="./assets/img/Styler-01.jpg" alt="">
+                    <p class="stylist_name">ALITA WILLIAMS</p>
+                    <p class="specialty">- COLOURIST</p>
+                </div>
+                <div class="stylist">
+                    <img class="stylist_pic" src="./assets/img/Styler-02.jpg" alt="">
+                    <p class="stylist_name">AYESHA LAKES</p>
+                    <p class="specialty">- STYLER</p>
+                </div>
+                <div class="stylist">
+                    <img class="stylist_pic" src="./assets/img/Styler-03.jpg" alt="">
+                    <p class="stylist_name">ALEN SMITH</p>
+                    <p class="specialty">- BEAUTICIAN</p>
+                </div>
+                <div class="stylist">
+                    <img class="stylist_pic" src="./assets/img/Styler-01.jpg" alt="">
+                    <p class="stylist_name">JANE DEMURO</p>
+                    <p class="specialty">- STYLER</p>
+                </div>
+            </div>
         </div>
-        <!-- Fifth section, multi-picture panel-->
+        <!-- Fifth section, "CLIENT FEEDBACK" section-->
         <div class="fifth_section">
-            <div class="fs_title"></div>
-            <div class="fs_picture_panel">
+            <p class="section_title vs">OUR CLIENT FEEDBACK</p>
+            <img class="line_sm" src="./assets/img/black_line.png" alt="">
+            <div class="vs_title"></div>
+            <div class="vs_picture_panel">
                 <img src="" alt="">
                 <img src="" alt="">
                 <img src="" alt="">
@@ -88,6 +169,14 @@
                 <img src="" alt="">
                 <img src="" alt="">
             </div>
+        </div>
+        <!-- Sixth section, "BOOK YOUR VISIT" section-->
+        <div class="sixth_section">
+
+        </div>
+        <!-- Footer section-->
+        <div class="footer">
+
         </div>
     </div>
 </body>
