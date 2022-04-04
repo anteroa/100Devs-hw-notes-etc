@@ -1,42 +1,38 @@
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+.main {
+    height: 1024px;
+    width: 4000px;
+}
 
-    .main {
-        height: 100%;
-        width: 100%;
-    }
+.list_item {
+    display: inline;
+}
 
-    .list_item {
-        display: inline;
-    }
+.navbar {
+    height: 5%;
+    background-color: blue;
+}
 
-    .navbar {
-        height: 10%;
-        background-color: blue;
-    }
+.first_section {
+    height: 15%;
+    background-color: red;
+}
 
-    .first_section {
-        height: 10%;
-        background-color: red;
-    }
+.second_section {
+    height: 20%;
+    background-color: pink;
+}
 
-    .second_section {
-        height: 20%;
-        background-color: pink;
-    }
+.third_section {
+    height: 20%;
+    background-color: greenyellow;
+}
 
-    .third_section {
-        height: 20%;
-        background-color: greenyellow;
-    }
+.fourth_section {
+    height: 20%;
+    background-color: purple;
+}
 
-    .fourth_section {
-        height: 20%;
-        background-color: purple;
-    }
-
-    .fifth_section {
-        height: 20%;
-        background-color: green;
-    }
-
+.fifth_section {
+    height: 20%;
+    background-color: green;
 }
