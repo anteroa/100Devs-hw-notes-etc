@@ -5,11 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/css/style.css">
+    <title>Pokedex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="main">
+        <div class="dex_body">
+            <div class="screen">
+                <img id="sprite" src="" alt="">
+            </div>
+            <h2 class="text">enter pokemon name then hit search</h2>
+            <div class="search_input">
+                <input id='pokemon_entry' type="text">
+            </div>
+            <button class="search_button">SEARCH</button>
+        </div>
+        <div class="dex_results">
+            <h2 id="name"></h2>
+            <img src="" alt="">
+        </div>
+    </div>
 
+    <script src="./JS/catchem.js"></script>
 </body>
 
 </html>

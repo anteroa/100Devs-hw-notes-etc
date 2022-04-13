@@ -1,0 +1,151 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background-color: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  color: #c2b2be;
+}
+
+.text {
+  position: relative;
+  bottom: 2rem;
+}
+
+.main {
+  width: 90%;
+  height: 55rem;
+  background-image: url("../../img/background.webp");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dex_body {
+  width: 30%;
+  height: 80%;
+  background: linear-gradient(150deg, transparent 30px, red 0);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  font-family: 'VT323', monospace;
+}
+
+.screen {
+  width: 80%;
+  height: 40%;
+  background-color: #202020;
+  opacity: 1;
+  position: relative;
+  bottom: 7rem;
+}
+
+.search_input {
+  width: 50%;
+  height: 2rem;
+  background-color: #4f9d57;
+  position: relative;
+  bottom: 2rem;
+  right: 4rem;
+}
+
+.search_input input {
+  background-color: #4f9d57 ;
+  width: 100%;
+  height: 100%;
+  font-family: 'VT323', monospace;
+  font-size: 1.5rem;
+}
+
+.search_button {
+  width: 25%;
+  height: 2rem;
+  border-radius: 25%;
+  background-color: gray;
+  position: relative;
+  bottom: 4rem;
+  left: 7rem;
+  font-family: 'VT323', monospace;
+
+}
+
+.search_button button {
+  background: transparent;
+  border: 0;
+  margin-left: 1.75rem;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  font-family: 'VT323', monospace;
+}
+
+button:active {
+  background-color: #4d4d4d;
+  box-shadow: 0 5px #191919;
+  transform: translateY(4px);
+}
+
+.dex_results {
+  width: 40%;
+  height: 80%;
+  background: linear-gradient(150deg, transparent 30px, black 0);
+  opacity: 0.97;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  font-family: 'VT323', monospace;
+}
+
+#sprite {
+  height: 100%;
+  position: relative;
+  left: 0.75rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  body {
+      background: #292929;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  body {
+      background: #292929;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  body {
+      background: #292929;
+  }
+}
+
+@media all and (max-width: 480px) {
+  body {
+      background: #292929;
+  }
+}
