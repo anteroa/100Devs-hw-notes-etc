@@ -14,19 +14,98 @@
 
 <body>
     <div class="main">
-        <div class="dex_body">
+
+        <div class="dex_left">
             <div class="screen">
                 <img id="sprite" src="" alt="">
             </div>
-            <h2 class="text">enter pokemon name then hit search</h2>
+            <div class="search_title_container">
+                <h2 class="search_title">Pokemon Search:</h2>
+            </div>
             <div class="search_input">
                 <input id='pokemon_entry' type="text">
+                <button class="search_button">SEARCH</button>
             </div>
-            <button class="search_button">SEARCH</button>
+            <div class="random_type_title_container">
+                <h3 class="random_type_title">Random Pokemon By Type:</h3>
+            </div>
+            <div class="type_buttons_container">
+                <div class="type_button_row top">
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/bug.svg" alt="bug type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/dark.svg" alt="dark type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/dragon.svg" alt="dragon type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/electric.svg" alt="electric type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/fairy.svg" alt="fairy type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/fighting.svg" alt="fighting type icon">
+                    </div>
+                </div>
+                <div class="type_button_row middle">
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/fire.svg" alt="fire type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/flying.svg" alt="flying type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/ghost.svg" alt="ghost type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/grass.svg" alt="grass type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/ground.svg" alt="ground type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/ice.svg" alt="ice type icon">
+                    </div>
+                </div>
+                <div class="type_button_row bottom">
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/normal.svg" alt="ice type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/poison.svg" alt="poison type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/psychic.svg" alt="psychic type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/rock.svg" alt="rock type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/steel.svg" alt="steel type icon">
+                    </div>
+                    <div class="type_button">
+                        <img class="type_img" src="./img/icons/water.svg" alt="water type icon">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="dex_results">
-            <h2 id="name"></h2>
-            <img src="" alt="">
+
+        <div class="dex_right">
+            <h3 id="name">Pokemon Name</h3>
+            <p class="poke_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.
+            </p>
+            <h3 class="evo_title">Evolution Chain</h3>
+            <div id="evo_container" class="evo_chain_container">
+                <img class="evo_node" src="" alt="">
+                <img class="evo_node" src="" alt="">
+                <img class="evo_node" src="" alt="">
+            </div>
         </div>
     </div>
 

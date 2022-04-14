@@ -11,59 +11,58 @@
 /* LAYOUT
 /*******************************************/
 body {
-  background-color: #292929;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-h2 {
-  color: #c2b2be;
-}
-
-.text {
-  position: relative;
-  bottom: 2rem;
-}
-
 .main {
-  width: 90%;
-  height: 55rem;
+  width: 100%;
+  height: 100vh;
   background-image: url("../../img/background.webp");
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x:hidden;
 }
 
-.dex_body {
-  width: 30%;
-  height: 80%;
-  background: linear-gradient(150deg, transparent 30px, red 0);
-  opacity: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  font-family: 'VT323', monospace;
+.dex_left {
+	width: 30%;
+	height: 80%;
+	background: linear-gradient(150deg, transparent 30px, red 0);
+	display: flex;
+	flex-flow: column;
+	font-family: 'VT323', monospace;
+	align-items: center;
+	padding-top: 2.5%;
 }
 
 .screen {
   width: 80%;
   height: 40%;
   background-color: #202020;
+  background: linear-gradient(150deg, transparent 15px, #202020 0);
   opacity: 1;
+}
+#sprite {
+  height: 100%;
   position: relative;
-  bottom: 7rem;
+  left: 0.75rem;
+}
+
+.search_title_container {
+  height: 5%;
+  width: 80%;
 }
 
 .search_input {
-  width: 50%;
-  height: 2rem;
+  width: 47%;
+  height: 5%;
   background-color: #4f9d57;
   position: relative;
-  bottom: 2rem;
-  right: 4rem;
+  bottom: -2rem;
+  right: 3rem;
 }
 
 .search_input input {
@@ -75,13 +74,13 @@ h2 {
 }
 
 .search_button {
-  width: 25%;
+  width: 58%;
   height: 2rem;
   border-radius: 25%;
   background-color: gray;
   position: relative;
-  bottom: 4rem;
-  left: 7rem;
+  bottom: 2rem;
+  left: 10rem;
   font-family: 'VT323', monospace;
 
 }
@@ -104,7 +103,47 @@ button:active {
   transform: translateY(4px);
 }
 
-.dex_results {
+.random_type_title {
+	/* background-color: #191919; */
+	position: relative;
+	top: 2rem;
+	left: -2rem;
+}
+
+.type_buttons_container {
+  display: flex;
+  flex-flow: column;
+  width: 80%;
+  height: 30%;
+  border: 1px black
+   solid;
+  position: relative;
+  top: 2rem;
+}
+
+.type_button_row {
+  height: 33%;
+  width: 99%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.type_button {
+  height: 99%;
+  width: 16.66%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #202020 solid 1px;
+}
+
+.type_img {
+  height: 80%;
+  width: 80%;
+}
+
+.dex_right {
   width: 40%;
   height: 80%;
   background: linear-gradient(150deg, transparent 30px, black 0);
@@ -116,11 +155,23 @@ button:active {
   font-family: 'VT323', monospace;
 }
 
-#sprite {
-  height: 100%;
-  position: relative;
-  left: 0.75rem;
+#name {
+  color: azure;
 }
+
+.poke_desc {
+  color: whitesmoke;
+  width: 80%
+}
+
+.evo_title {
+  color: whitesmoke;
+}
+
+.evo_node {
+  height: 3rem;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES

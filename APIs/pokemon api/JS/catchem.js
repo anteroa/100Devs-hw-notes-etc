@@ -6,6 +6,9 @@ function getPokemon(){
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}`)
     .then(res => res.json())
     .then(data => {
+        //testing
+        console.log(data) 
+
         //Gets image from returned data and displays on screen
         document.querySelector('.screen').innerHTML = 
         `<img 
@@ -14,9 +17,29 @@ function getPokemon(){
         alt="${data.name}">`
 
         //Gets other info to populate the right side of the dex
-        document.querySelector('.dex_results').innerHTML = 
-        `<h2 id="evo_chain">${data.name}'s evolution chain:</h2>
-        <img src="${data.}" alt="">
+        
+        
+
+        //Evo chain images
+        document.querySelector('#evo_container').innerHTML = 
         `
+        <img class="evo_node" src="${data.sprites.other["official-artwork"].front_default}"
+        alt="${data.name}">
+        <img class="evo_node" src="${data.sprites.other["official-artwork"].front_default}"
+        alt="${data.name}">
+        <img class="evo_node" src="${data.sprites.other["official-artwork"].front_default}"
+        alt="${data.name}">
+        `
+    })
+}
+
+document.querySelector('.search_button').addEventListener("click", getCharacteristics);
+
+function getCharacteristics(){
+    fetch(`https://pokeapi.co/api/v2/characteristic/128/`)
+    .then(res => res.json())
+    .then(dataA => {
+        //testing
+        console.log(dataA)
     })
 }
