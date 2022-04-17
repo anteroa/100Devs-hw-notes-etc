@@ -16,11 +16,11 @@ function getPokemon(){
         src="${data.sprites.other["official-artwork"].front_default}"
         alt="${data.name}">`
 
-        //Gets other info to populate the right side of the dex
+        //Get other info to populate the right side of the dex
         
+        //Get characteristics of pokemon
         
-
-        //Evo chain images
+        //Evo chain images - needs to be fixed
         document.querySelector('#evo_container').innerHTML = 
         `
         <img class="evo_node" src="${data.sprites.other["official-artwork"].front_default}"
@@ -30,16 +30,5 @@ function getPokemon(){
         <img class="evo_node" src="${data.sprites.other["official-artwork"].front_default}"
         alt="${data.name}">
         `
-    })
-}
-
-document.querySelector('.search_button').addEventListener("click", getCharacteristics);
-
-function getCharacteristics(){
-    fetch(`https://pokeapi.co/api/v2/characteristic/128/`)
-    .then(res => res.json())
-    .then(dataA => {
-        //testing
-        console.log(dataA)
     })
 }
