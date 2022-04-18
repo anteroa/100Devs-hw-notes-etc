@@ -159,6 +159,10 @@ button:active {
   color: azure;
 }
 
+#type {
+  color: azure;
+}
+
 .poke_desc {
   color: whitesmoke;
   width: 80%
