@@ -119,6 +119,8 @@ button:active {
    solid;
   position: relative;
   top: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .type_button_row {
@@ -185,7 +187,7 @@ table {
 }
 
 .evo_node {
-  height: 3rem;
+  height: 6rem;
 }
 
 

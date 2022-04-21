@@ -54,18 +54,26 @@ function getPokemon(){
 	
 		//get pokemon description
 		let description = data[1].flavor_text_entries[0].flavor_text;
-		document.querySelector('.poke_desc').textContent = description;
+		q_s('.poke_desc').textContent = description;
 	
 		//Evolution chain sprites
 		let chainURL = data[1].evolution_chain.url
-		getEvoChain(chainURL)
-
+		let evolvedYayOrNay = data[1].evolves_from_species
 		let evolvedFrom = data[1].evolves_from_species.name
 		let current = sprite
 		
 		//calls api for sprite url and adds it to DOM
-		getSprite(evolvedFrom, "evoA") 
+		if(evolvedYayOrNay === null){
+			//change html of first node to display something appropriate
+		}else{
+			//display coresponding sprite
+			getSprite(evolvedFrom, "evoA") 
+		}
 		
+		
+		//calls api for sprite of next evolution and adds it to DOM
+		getEvolvesTo(chainURL, "evoC")
+
 
 		q_s('#evo_container').innerHTML = 
 		`<img id="evoA" class="evo_node" src="" alt="">
@@ -97,23 +105,33 @@ function capFirstLetter(str){
 	return resStr;
 }
 
+//Get sprite url from API and display in DOM using a given element id
 function getSprite(pokemon, imgId){
 	fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}/`)
   		.then(response => response.json())
-  		.then(data => 
-				q_s(`#${imgId}`).src = data.sprites.other["official-artwork"].front_default
-			)
+  		.then(data => {
+			
+			if(!data.sprites.other["official-artwork"].front_default){
+				q_s(`#${imgId}`).src = ""
+			}else{
+				q_s(`#${imgId}`).src = 
+				data.sprites.other["official-artwork"].front_default
+			}
+		  }	)
   		.catch(error => console.log('error', error));
 }
 
-//gets a json response with the evolution chain data
-//the parameter should be the resulting evo chain url
-//from the initial API request
-function getEvoChain(url){
+//Uses getSprite and a evolution chain url to find the evultion of
+//searched pokemon, if any
+function getEvolvesTo(url, imgId){
 	fetch(`${url}`)
   		.then(response => response.json())
-  		.then(data => 
-				console.log(data)
-			)
+  		.then(data => {
+			if(!data.chain.evolves_to[0].evolves_to[0].species.name){
+				q_s(`#${imgId}`).src = ""
+			}else{
+				getSprite(data.chain.evolves_to[0].evolves_to[0].species.name , imgId)
+			}			
+		  }	)
   		.catch(error => console.log('error', error));
 }
