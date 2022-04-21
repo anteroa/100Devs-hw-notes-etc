@@ -168,6 +168,18 @@ button:active {
   width: 80%
 }
 
+table {
+  color: azure;
+}
+
+.lName, .rName {
+  width: 40%;
+}
+
+.lValue {
+  padding-right: 1rem;
+}
+
 .evo_title {
   color: whitesmoke;
 }
