@@ -62,14 +62,11 @@ function getPokemon(){
 		let evolvedFrom = data[1].evolves_from_species.name
 		let current = sprite
 		
-		//calls api for sprite url and adds it to DOM
-		if(evolvedYayOrNay === null){
-			//change html of first node to display something appropriate
-		}else{
-			//display coresponding sprite
-			getSprite(evolvedFrom, "evoA") 
-		}
+		//testing
+		console.log(evolvedYayOrNay)
 		
+		//calls api for sprite url and adds it to DOM
+		getSprite(evolvedFrom, "evoA") 
 		
 		//calls api for sprite of next evolution and adds it to DOM
 		getEvolvesTo(chainURL, "evoC")
