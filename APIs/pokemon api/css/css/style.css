@@ -25,10 +25,11 @@ body {
   align-items: center;
   justify-content: center;
   overflow-x:hidden;
+  overflow-y: hidden;
 }
 
 .dex_left {
-	width: 30%;
+	width: 20%;
 	height: 80%;
 	background: linear-gradient(150deg, transparent 30px, red 0);
 	display: flex;
