@@ -53,7 +53,7 @@ function getPokemon(){
 		
 	
 		//get pokemon description
-		let description = data[1].flavor_text_entries[0].flavor_text;
+		let description = data[1].flavor_text_entries[2].flavor_text;
 		q_s('.poke_desc').textContent = description;
 	
 		//Evolution chain sprites
