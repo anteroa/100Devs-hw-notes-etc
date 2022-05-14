@@ -18,3 +18,6 @@ function rowSumOddNumbers(n) {
   return Math.pow(n, 3);
 }
 
+//most popular solution was the same.
+
+//the reason for the solution being this way.
