@@ -1,0 +1,22 @@
+{
+  "name": "100devs-hw-notes-etc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronin-sec/100Devs-hw-notes-etc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronin-sec/100Devs-hw-notes-etc/issues"
+  },
+  "homepage": "https://github.com/ronin-sec/100Devs-hw-notes-etc#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
